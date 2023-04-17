@@ -1,0 +1,253 @@
+﻿<Window
+    x:Class="Restaurant.Forms.Windows.Modals.AddNewItemModal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Restaurant.Util"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="AddNewItemModal"
+    AllowsTransparency="True"
+    Background="#996F6F6F"
+    FontFamily="{StaticResource MaterialDesignFont}"
+    WindowStartupLocation="CenterOwner"
+    WindowState="Maximized"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Grid
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Background="{StaticResource MaterialDesignCardBackground}">
+        <materialDesign:Snackbar
+            x:Name="Snackbar"
+            Background="{StaticResource MaterialDesignSnackbarRipple}"
+            IsActive="False"
+            MessageQueue="{materialDesign:MessageQueue}" />
+        <TabControl materialDesign:ColorZoneAssist.Mode="SecondaryMid">
+            <TabItem x:Name="FoodTabItem" local:LocalizationProvider.ContentID="Food">
+                <StackPanel
+                    MinWidth="300"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    UseLayoutRounding="False">
+                    <TextBox
+                        x:Name="FoodNameTextBox"
+                        Width="250"
+                        Margin="0,30,0,10"
+                        VerticalAlignment="Top"
+                        HorizontalContentAlignment="Stretch"
+                        local:LocalizationProvider.ContentID="Name"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="1"
+                        Text="{Binding Name}" />
+                    <TextBox
+                        x:Name="FoodPriceTextBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        local:LocalizationProvider.ContentID="Price"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="2"
+                        Text="{Binding Price}" />
+                    <TextBox
+                        x:Name="FoodDescriptionTextBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        local:LocalizationProvider.ContentID="Description"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="3"
+                        Text="{Binding Description}" />
+                    <TextBox
+                        x:Name="FoodRecipeTextBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        local:LocalizationProvider.ContentID="Recipe"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="3"
+                        Text="{Binding Recipe}" />
+                    <ComboBox
+                        x:Name="FoodPortionSizeComboBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        local:LocalizationProvider.ContentID="PortionSize"
+                        Grid.IsSharedSizeScope="True"
+                        IsEditable="False"
+                        IsReadOnly="False"
+                        Style="{StaticResource MaterialDesignFilledComboBox}"
+                        Text="{Binding PortionSize}">
+                        <ComboBoxItem local:LocalizationProvider.ContentID="Big" />
+                        <ComboBoxItem local:LocalizationProvider.ContentID="Medium" />
+                        <ComboBoxItem local:LocalizationProvider.ContentID="Small" />
+                    </ComboBox>
+                    <ComboBox
+                        x:Name="FoodItemCategoryComboBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        local:LocalizationProvider.ContentID="ItemCategory"
+                        Grid.IsSharedSizeScope="True"
+                        IsEditable="False"
+                        ItemsSource="{Binding Items}"
+                        Style="{StaticResource MaterialDesignFilledComboBox}" />
+                    <StackPanel
+                        Width="300"
+                        Margin="0,0,0,30"
+                        Orientation="Horizontal">
+                        <TextBox
+                            x:Name="FoodImageTextBox"
+                            Width="220"
+                            Margin="25,0,0,0"
+                            local:LocalizationProvider.ContentID="Image"
+                            IsReadOnly="True"
+                            Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        <Button
+                            Padding="5,5,5,5"
+                            Click="AddFoodImage_Click"
+                            Style="{StaticResource MaterialDesignFlatAccentButton}">
+                            <materialDesign:PackIcon Kind="Paperclip" />
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel
+                        Margin="0,0,0,50"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                        <Button
+                            Width="110"
+                            Margin="0,0,30,0"
+                            local:LocalizationProvider.ContentID="Add"
+                            Click="AddFood_Click"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            IsDefault="True"
+                            Style="{StaticResource MaterialDesignFlatAccentBgButton}"
+                            TabIndex="2" />
+                        <Button
+                            Width="110"
+                            local:LocalizationProvider.ContentID="Cancel"
+                            BorderBrush="#FF7D7373"
+                            BorderThickness="1,1,1,1"
+                            Click="Cancel_Click"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            Style="{StaticResource MaterialDesignFlatAccentButton}"
+                            TabIndex="8" />
+                    </StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem x:Name="DrinkTabItem" local:LocalizationProvider.ContentID="Drink">
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    UseLayoutRounding="False">
+                    <TextBox
+                        x:Name="DrinkNameTextBox"
+                        Width="250"
+                        Margin="0,30,0,10"
+                        VerticalAlignment="Top"
+                        HorizontalContentAlignment="Stretch"
+                        local:LocalizationProvider.ContentID="Name"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="1"
+                        Text="{Binding Name}" />
+                    <TextBox
+                        x:Name="DrinkPriceTextBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        local:LocalizationProvider.ContentID="Price"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="2"
+                        Text="{Binding Price}" />
+                    <TextBox
+                        x:Name="DrinkDescriptionTextBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        local:LocalizationProvider.ContentID="Description"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="3"
+                        Text="{Binding Description}" />
+                    <TextBox
+                        x:Name="DrinkQuantityTextBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        local:LocalizationProvider.ContentID="Quantity"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        TabIndex="4"
+                        Text="{Binding Quantity}" />
+                    <ComboBox
+                        x:Name="ManufacturerCategoryComboBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        local:LocalizationProvider.ContentID="ManufacturerCategory"
+                        Grid.IsSharedSizeScope="True"
+                        IsEditable="False"
+                        IsReadOnly="False"
+                        Style="{StaticResource MaterialDesignFilledComboBox}"
+                        Text="{Binding ManufacturerCategory}" />
+                    <ComboBox
+                        x:Name="DrinkItemCategoryComboBox"
+                        Width="250"
+                        Margin="0,0,0,10"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        local:LocalizationProvider.ContentID="ItemCategory"
+                        Grid.IsSharedSizeScope="True"
+                        IsEditable="False"
+                        ItemsSource="{Binding Items}"
+                        Style="{StaticResource MaterialDesignFilledComboBox}" />
+                    <StackPanel
+                        Width="300"
+                        Margin="0,0,0,30"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                        <TextBox
+                            x:Name="DrinkImageTextBox"
+                            Width="220"
+                            Margin="25,0,0,0"
+                            local:LocalizationProvider.ContentID="Image"
+                            IsReadOnly="True"
+                            Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        <Button
+                            Padding="5,5,5,5"
+                            Click="AddDrinkImage_Click"
+                            Style="{StaticResource MaterialDesignFlatAccentButton}">
+                            <materialDesign:PackIcon Kind="Paperclip" />
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel
+                        Margin="0,0,0,50"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                        <Button
+                            Width="110"
+                            Margin="0,0,30,0"
+                            local:LocalizationProvider.ContentID="Add"
+                            Click="AddDrink_Click"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            IsDefault="True"
+                            Style="{StaticResource MaterialDesignFlatAccentBgButton}"
+                            TabIndex="2" />
+                        <Button
+                            Width="110"
+                            local:LocalizationProvider.ContentID="Cancel"
+                            BorderBrush="#FF7D7373"
+                            BorderThickness="1,1,1,1"
+                            Click="Cancel_Click"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            Style="{StaticResource MaterialDesignFlatAccentButton}"
+                            TabIndex="8" />
+                    </StackPanel>
+
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

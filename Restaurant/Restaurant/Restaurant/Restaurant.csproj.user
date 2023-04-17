@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Forms\Controls\NumericSpinner.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Pages\BillsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Pages\CategoriesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Pages\EmployeesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Pages\MenuPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Pages\MenuPageAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Pages\OrdersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Pages\SettingsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Windows\Modals\AddNewItemModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Windows\Modals\DetailedBillModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Windows\Modals\EditItemCategoryModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Windows\Modals\EditManufacturerModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Windows\Modals\TableModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forms\Windows\Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Forms\Controls\NumericSpinner.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\MessageBoxCustom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Pages\BillsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Pages\CategoriesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Pages\EmployeesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Pages\MenuPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Pages\MenuPageAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Pages\OrdersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\Modals\AddNewItemModal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\Modals\DetailedBillModal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\Modals\EditItemCategoryModal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\Modals\EditManufacturerModal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\SignIn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\Modals\TableModal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forms\Windows\Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

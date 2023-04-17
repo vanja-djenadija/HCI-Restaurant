@@ -1,0 +1,130 @@
+﻿<Window
+    x:Class="Restaurant.Forms.Windows.Modals.EmployeeModal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Restaurant.Util"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="EmployeeModal"
+    AllowsTransparency="True"
+    Background="#33000000"
+    WindowStartupLocation="CenterOwner"
+    WindowState="Maximized"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Grid
+        Margin="0,0,0,0"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Background="{StaticResource MaterialDesignCardBackground}">
+        <materialDesign:Snackbar
+            x:Name="EmployeeModalSnackbar"
+            Background="{StaticResource MaterialDesignSnackbarRipple}"
+            IsActive="False"
+            MessageQueue="{materialDesign:MessageQueue}" />
+        <StackPanel
+            MinWidth="300"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Stretch"
+            UseLayoutRounding="False">
+            <Label
+                Margin="20,20,20,0"
+                Padding="4,4,4,4"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                local:LocalizationProvider.ContentID="AddNewEmployee"
+                FontSize="16"
+                FontWeight="Bold" />
+            <TextBox
+                x:Name="NameTextBox"
+                MaxWidth="250"
+                Margin="0,20,0,10"
+                VerticalAlignment="Top"
+                HorizontalContentAlignment="Stretch"
+                local:LocalizationProvider.ContentID="Name"
+                Style="{StaticResource MaterialDesignFilledTextBox}"
+                TabIndex="1"
+                Text="{Binding Name}" />
+            <TextBox
+                x:Name="LastNameTextBox"
+                MaxWidth="250"
+                Margin="0,0,0,10"
+                local:LocalizationProvider.ContentID="Lastname"
+                Style="{StaticResource MaterialDesignFilledTextBox}"
+                TabIndex="2"
+                Text="{Binding Lastname}" />
+            <TextBox
+                x:Name="UsernameTextBox"
+                MaxWidth="250"
+                Margin="0,0,0,10"
+                local:LocalizationProvider.ContentID="Username"
+                Style="{StaticResource MaterialDesignFilledTextBox}"
+                TabIndex="3"
+                Text="{Binding Username}" />
+            <PasswordBox
+                x:Name="PasswordBox"
+                MaxWidth="250"
+                Margin="0,0,0,10"
+                local:LocalizationProvider.ContentID="Password"
+                Style="{StaticResource MaterialDesignFilledPasswordBox}"
+                TabIndex="4" />
+            <TextBox
+                x:Name="PhoneNumberTextBox"
+                MaxWidth="250"
+                Margin="0,0,0,10"
+                local:LocalizationProvider.ContentID="PhoneNumber"
+                Style="{StaticResource MaterialDesignFilledTextBox}"
+                TabIndex="5"
+                Text="{Binding PhoneNumber}" />
+            <TextBox
+                x:Name="PlaceOfResidenceTextBox"
+                MaxWidth="250"
+                Margin="0,0,0,10"
+                local:LocalizationProvider.ContentID="PlaceOfResidence"
+                Style="{StaticResource MaterialDesignFilledTextBox}"
+                TabIndex="6"
+                Text="{Binding PlaceOfResidence}" />
+            <ComboBox
+                x:Name="RoleComboBox"
+                MaxWidth="250"
+                Margin="0,0,0,20"
+                HorizontalContentAlignment="Left"
+                VerticalContentAlignment="Center"
+                local:LocalizationProvider.ContentID="Role"
+                Grid.IsSharedSizeScope="True"
+                IsEditable="True"
+                IsReadOnly="False"
+                SelectedIndex="0"
+                Style="{StaticResource MaterialDesignFilledComboBox}"
+                Text="{Binding Role}">
+                <ComboBoxItem Content="Konobar" />
+                <ComboBoxItem Content="Chef" />
+            </ComboBox>
+            <StackPanel
+                Margin="0,0,0,50"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+                <Button
+                    MinWidth="110"
+                    Margin="0,0,30,0"
+                    HorizontalAlignment="Left"
+                    local:LocalizationProvider.ContentID="Add"
+                    Click="Add_Click"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    TabIndex="7" />
+                <Button
+                    MinWidth="110"
+                    local:LocalizationProvider.ContentID="Cancel"
+                    BorderBrush="#FF7D7373"
+                    BorderThickness="1,1,1,1"
+                    Click="Cancel_Click"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    TabIndex="8" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿Restaurant
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Projects\hci restoran\Restaurant\Restaurant\obj\Debug\net6.0-windows\
+Restaurant
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Projects\hci restoran\Restaurant\Restaurant\App.xaml
+20-466142562
+12088947205
+621234426980
+2042027150619
+Forms\Controls\NumericSpinner.xaml;Forms\MessageBoxCustom.xaml;Forms\Pages\BillsPage.xaml;Forms\Pages\CategoriesPage.xaml;Forms\Pages\EmployeesPage.xaml;Forms\Pages\MenuPage.xaml;Forms\Pages\MenuPageAdmin.xaml;Forms\Pages\OrdersPage.xaml;Forms\Pages\SettingsPage.xaml;Forms\Windows\MainWindow.xaml;Forms\Windows\Modals\AddNewItemModal.xaml;Forms\Windows\Modals\DetailedBillModal.xaml;Forms\Windows\Modals\EditItemCategoryModal.xaml;Forms\Windows\Modals\EditManufacturerModal.xaml;Forms\Windows\Modals\EmployeeModal.xaml;Forms\Windows\Modals\ItemCategoryModal.xaml;Forms\Windows\Modals\ManufacturerModal.xaml;Forms\Windows\Modals\TableModal.xaml;Forms\Windows\SignIn.xaml;Forms\Windows\Window1.xaml;
+
+False
+
