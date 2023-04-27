@@ -8,7 +8,6 @@ Human computer interaction - Project
 ![settings-theme-surprise](https://user-images.githubusercontent.com/130909026/234796829-07f07fe1-da01-4203-9466-593160d39951.png)
 ![sign-in](https://user-images.githubusercontent.com/130909026/234796902-1ab0e36b-dbc6-4894-86a5-88dfe98e6b5c.png)
 ![categories-context-menu](https://user-images.githubusercontent.com/130909026/234797101-61874d23-2dc2-4a16-98a1-a66b5845bec2.png)
-![employees](https://user-images.githubusercontent.com/130909026/234797106-a7942e9b-0247-4df6-b40d-b126046f86ce.png)
 ![employees-add-new-employee](https://user-images.githubusercontent.com/130909026/234797109-01b41934-49c0-48f3-b3f3-107feabd9708.png)
 ![menu-add-modal](https://user-images.githubusercontent.com/130909026/234797114-856d1842-a930-4dd1-a895-df50b132e5df.png)
 ![menu-dark-theme](https://user-images.githubusercontent.com/130909026/234797123-f6a6d1a6-6b8c-4826-8292-f15bea393265.png)
