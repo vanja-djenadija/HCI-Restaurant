@@ -1,0 +1,28 @@
+# HCI-Restaurant
+Human computer interaction - Project
+
+
+![menu-admin](https://user-images.githubusercontent.com/130909026/234796744-419dc7d9-bf35-47cb-a803-25493dfa61ef.png)
+![menu-waiter](https://user-images.githubusercontent.com/130909026/234796804-9c932b9a-2e10-48d9-b487-8717ecf25a2a.png)
+![menu-dark-theme](https://user-images.githubusercontent.com/130909026/234796819-416f7fe4-6ac0-4a7c-8fef-5b652976cf5a.png)
+![settings-theme-surprise](https://user-images.githubusercontent.com/130909026/234796829-07f07fe1-da01-4203-9466-593160d39951.png)
+![sign-in](https://user-images.githubusercontent.com/130909026/234796902-1ab0e36b-dbc6-4894-86a5-88dfe98e6b5c.png)
+![categories-context-menu](https://user-images.githubusercontent.com/130909026/234797101-61874d23-2dc2-4a16-98a1-a66b5845bec2.png)
+![employees](https://user-images.githubusercontent.com/130909026/234797106-a7942e9b-0247-4df6-b40d-b126046f86ce.png)
+![employees-add-new-employee](https://user-images.githubusercontent.com/130909026/234797109-01b41934-49c0-48f3-b3f3-107feabd9708.png)
+![menu-add-modal](https://user-images.githubusercontent.com/130909026/234797114-856d1842-a930-4dd1-a895-df50b132e5df.png)
+![menu-dark-theme](https://user-images.githubusercontent.com/130909026/234797123-f6a6d1a6-6b8c-4826-8292-f15bea393265.png)
+![menu-filter](https://user-images.githubusercontent.com/130909026/234797125-fd43a0b0-e598-414d-88cf-8b77f3b72ec3.png)
+![menu-item-delete](https://user-images.githubusercontent.com/130909026/234797127-77152d3a-dd5b-4818-8a12-c71ef80a8d3e.png)
+![message-box-confirmation](https://user-images.githubusercontent.com/130909026/234797128-f92005b3-b3e0-4798-8a0a-cda85da62993.png)
+![orders](https://user-images.githubusercontent.com/130909026/234797133-16961544-1937-4939-a69b-8f15aa627234.png)
+![settings](https://user-images.githubusercontent.com/130909026/234797135-99d3c602-4121-4048-8c7c-b551a8542e2b.png)
+![settings-language](https://user-images.githubusercontent.com/130909026/234797137-98b92e0a-b5b2-44aa-95c7-cc43507c8d58.png)
+![settings-my-account](https://user-images.githubusercontent.com/130909026/234797140-98b177ab-4c5a-4021-8e9a-2fcd70c8ac86.png)
+![settings-theme](https://user-images.githubusercontent.com/130909026/234797142-20ef4f30-fe02-439d-94ed-82b03077d1ad.png)
+![bills](https://user-images.githubusercontent.com/130909026/234797146-6efaad51-9a6e-4762-b3e7-c244fb91de53.png)
+![bills-detailed-view](https://user-images.githubusercontent.com/130909026/234797149-b119b29e-7049-48e6-a456-2eb9ef981ad8.png)
+![bills-filter](https://user-images.githubusercontent.com/130909026/234797153-8cb1a0f1-6c6f-4bff-af0f-487941704e1a.png)
+![bills-view-details](https://user-images.githubusercontent.com/130909026/234797155-8f365a83-a626-4ff6-b6dd-4f3d2e4bce8f.png)
+![categories](https://user-images.githubusercontent.com/130909026/234797157-7a00963a-4627-4a60-a89b-fe384253d541.png)
+![categories-add](https://user-images.githubusercontent.com/130909026/234797158-c92a475f-959e-4c4f-84ae-ef52318eb701.png)
